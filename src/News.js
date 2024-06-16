@@ -27,7 +27,7 @@ const News = () => {
         const response = await axios.get('https://newsapi.org/v2/top-headlines', {
           params: {
             language: 'ko',
-            apiKey: '40f71efc163d4c849ed7475b1f677f72', // 여기에 자신의 API 키를 입력하세요
+            apiKey: '40f71efc163d4c849ed7475b1f677f72', // 뉴스 API 키
           },
         });
         setArticles(response.data.articles); // 가져온 뉴스 데이터를 상태에 저장
