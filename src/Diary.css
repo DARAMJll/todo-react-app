@@ -1,0 +1,43 @@
+/* Diary.css */
+.diary-paper {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: 'LINESeedKR-Bd', sans-serif;
+}
+
+.diary-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.diary-header > * {
+    flex: 1;
+}
+
+.diary-list {
+    margin-top: 2rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pagination li {
+    display: inline;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.pagination li.active a {
+    color: green;
+    font-weight: bold;
+}
+
+.select-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}

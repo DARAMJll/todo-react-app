@@ -1,0 +1,164 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -220px;
+  margin-left: -300px;
+}
+
+body {
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-6/sym597.cur), auto !important;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #A5DFCE, #A5DFCE);
+  box-shadow: 5px 5px 15px #A5DFCE, -5px -5px 15px #E8F7F3;
+  position: relative;
+  margin-bottom: 70px;
+  margin-left: 40px; /* 시계를 오른쪽으로 옮기기 위해 추가 */
+}
+
+.clock {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  background: #fff;
+  transform-origin: 50% 100%;
+}
+
+.hour {
+  width: 6px;
+  height: 50px;
+}
+
+.minute {
+  width: 4px;
+  height: 70px;
+}
+
+.second {
+  width: 2px;
+  height: 90px;
+  background: #ff0000;
+}
+
+.digital-time {
+  text-align: center;
+  color: #31958A;
+  font-size: 1.5em;
+  margin-top: 10px;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  margin-right: -10px;
+}
+
+.date {
+  text-align: center;
+  color: #31958A;
+  font-size: 1.2em;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  margin-right: -10px;
+}
+
+.calendar {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 250px;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day, .empty-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.today {
+  background-color: #31958A;
+  color: white;
+  border-radius: 50%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: -350px;
+  margin-left: 450px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1em;
+  color: #31958A;
+}
+
+nav {
+  margin-bottom: 30px; /* 상단 배너 아래에 20px의 여백 추가 */
+}
